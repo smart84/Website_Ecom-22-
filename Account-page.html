@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account-page</title>
+    <link rel="stylesheet" href="stylec.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+               <a href="index.html"> <img src="My_images/prelogo1.jpg" width="110" height="55" border-radius="3px" /></a>
+
+            </div>
+            <nav>
+                <ul id="menu-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="All-products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="Account-page.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="My_images/shopping-cart.png" width="30px" height="30px" />
+            <img src="menuicon1.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+    </div>
+
+    <!--------Account-Page--------->
+
+    <div class="page-account">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="My_images/sky-blue5.jpg" width="70%" />
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="guide" />
+                        </div>
+                        <form id="for-login">
+                            <input type="text" placeholder="Username" />
+                            <input type="password" placeholder="Password" />
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+                        <form id="for-register">
+                            <input type="text" placeholder="Username" />
+                            <input type="email" placeholder="Email" />
+                            <input type="password" placeholder="Password" />
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------Footer------------>
+
+        <!-------------Footer------------>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone</p>
+                        <div class="app-logo">
+                            <img src="" />
+                            <img src="" />
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="My_images/prelogo1.jpg" alt="website logo" width="110" height="55" border-radius="3px" />
+                        <p>Our Purpose is to sustainably make the pleasure and Benefits
+                        of sport accessible to the many</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <p class="copyright">Copyright 2021 EZPM</p>
+            </div>
+        </div>
+    <!--------Javascript for responsiveness------>
+    <script>
+            var menuItems = document.getElementById("menu-items");
+            menuItems.style.maxHeight = "0px";
+
+            function menutoggle() {
+                if (menuItems.style.maxHeight == "0px";)
+                {
+                    menuItems.style.maxHeight = "200px";
+
+                }
+              else 
+                {
+                    menuItems.style.maxHeight == "0px";
+                }
+            }
+    </script>
+
+    <!--------Javascript for Form-------> 
+    <script>
+     var forLogin = document.getElementById("for-login");
+     var forRegister = document.getElementById("for-register");
+     var guide = document.getElementById("guide");
+
+     function register(){
+        forRegister.style.transform = "translateX(0px)";
+        forLogin.style.transform = "translateX(0px)";
+        guide.style.transform = "translateX(100px)";
+        
+        }
+
+     function login(){
+        forRegister.style.transform = "translateX(360px)";
+        forLogin.style.transform = "translateX(360px)";
+        guide.style.transform = "translateX(0px)";
+        }
+
+    </script>
+    
+
+</body>
+</html>

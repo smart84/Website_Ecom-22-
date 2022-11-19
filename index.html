@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVOKE Ecommerce Website Design</title>
+    <link rel="stylesheet" href="stylec.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" />-->
+    <link rel=""
+
+
+</head>
+<body>
+  <div class="header" style="background: radial-gradient(#fff, #00ff21)">
+    
+      <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <img src="My_images/prelogo1.jpg" width="110" height="55" border-radius="3px"/>
+
+              </div>
+              <nav>
+                  <ul id="menu-items">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="All-Products.html">Products</a></li>
+                      <li><a href="Products-details">About</a></li>
+                      <li><a href="#footer">Contact</a></li>
+                      <li><a href="Account-page.html">Account</a></li>
+                  </ul>
+              </nav>
+              <a href=""><img src="My_images/shopping-cart.png" width="30px" height="30px" /></a>
+              <img src="My_images/menuicon1.png" class="menu-icon" onclick="menutoggle()" />
+          </div>
+          <div class="row rowb">
+            <div class="col-2">
+               <h1>IT's Time to Adopt<br /> A New Style!</h1>
+                <p>Success isn't always about greatness. It's about
+                consistency.consistent<br /> hard work gains success. Greatness
+                will come</p>
+                <a href="" class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2" id="col-22">
+                <img src="My_images/expo1.jpg" style="border-radius: 50%" />
+            </div>
+          </div>
+    </div>
+  </div> 
+
+    <!--------------Featured Categories---------->
+
+<!--    <div class="categories"> 
+        <div class="small-container"> -->
+            <div id="img-dot">
+                <div class="inrow-slideshow">
+                    <div class="col-1 fade ex">
+                        <div class="ranking">1/8</div>
+                        <a href="Suits and Coats.html"><img src="My_images/costume4.jpg" /></a>    
+                        <h4 class="text">Suits & Coats</h4>
+                    </div>
+                    <div class="col-1 fade">
+                        <div class="ranking">2/8</div>
+                        <a href="Shoes.html"><img src="My_images/high-heel-shoes.png" style="max-width: 350px"/></a>
+                        <h4 class="text">Shoes</h4>
+                    </div>
+                    <div class="col-1 fade">
+                        <div class="ranking">3/8</div>
+                        <a href=""><img src="My_images/chem3.jpg"/></a>
+                        <h4 class="text">Men</h4>
+                    </div>
+                    <div class="col-1 fade">
+                        <div class="ranking">4/8</div>
+                        <a href=""><img src="My_images/peaunoire2.jpg" /></a>
+                        <h4 class="text">Women</h4>
+                    </div>
+                    <div class="col-1 fade">
+                        <div class="ranking">5/8</div>
+                        <a href=""><img src="My_images/t-shirt-b.jpg" /></a>
+                        <h4 class="text">T-Shirts & Jeans</h4>
+                    </div>
+                    <div class="col-1 fade">
+                       <div class="ranking">6/8</div>
+                       <a href=""><img src="My_images/chem-enfant.jpg"/></a>
+                       <h4 class="text">Children</h4>
+                    </div>
+                    <div class="col-1 fade">
+                        <div class="ranking">7/8</div>
+                        <a href=""><img src="My_images/techs.jpg"/></a>
+                        <h4 class="text">Tech</h4>
+                    </div>
+                    <div class="col-1 fade">
+                        <div class="ranking">8/8</div>
+                        <a href=""><img src="My_images/webscreen2.png"/></a>
+                        <h4 class="text">Other</h4>
+                    </div>
+                    <!-----------Previous & Next----------->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div> 
+                <!---------------Dot Buttons---------------->
+                <div class="cont-dots" style="text-align:center"> 
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                        
+                </div>
+                <p id="desc"> Prefered categories may be found above by
+                    clicking a dot or a photo with corresponding
+                    descrition text. Also change category with
+                    left and right arrows.
+                </p>
+            
+            </div>
+     <!--   </div>
+    </div> -->
+    <!-----------Featured Products---------->
+
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="My_images/sky-blue3.jpg" class="artcl rel-art"  />
+                <h4>Sky-blue suits</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa fa-star-o"></i> 
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="My_images/blazer1.jpg" class="artcl rel-art" />
+                <h4>designed Blazer</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$75.00</p>
+            </div>
+            <div class="col-4">
+                <img src="My_images/botil1.jpg" />
+                <h4>Suede Booties</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$22.00</p>
+            </div>
+            <div class="col-4">
+                <img src="My_images/chem-fem.jpg" />
+                <h4>set of two Women Shirts</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$18.00</p>
+            </div>
+        </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="My_images/chem2.jpg" />
+                <h4>Cotton Shirt for Men</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$15.00</p>
+            </div>
+            <div class="col-4">
+                <img src="My_images/chem-enfant.jpg" />
+                <h4>Lovely shirt for children</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$5.00</p>
+            </div>
+            <div class="col-4">
+                <img src="My_images/chem-fems.jpg" />
+                <h4>glittering outfit</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$130.00</p>
+            </div>
+            <div class="col-4">
+                <img src="My_images/manteau2.jpg" />
+                <h4>Classic coat</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>40.00</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="My_images/simple-t1.jpg" />
+                <h4>Bkack cotton T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$10.00</p>
+            </div>
+            <div class="col-4">
+                <img src="My_images/t-blanc2.jpg" />
+                <h4>Light T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$4.00</p>
+            </div>
+            <div class="col-4">
+                <img src="My_images/ténnis3.jpg" />
+                <h4>colored Nike sneakers</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$25.00</p>
+            </div>
+            <div class="col-4">
+                <img src="My_images/chau-h.jpg" />
+                <h4>Brown Leather Shoes</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa-solid fa-star-sharp"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+        </div>
+    </div>
+    <!--------Offer----------->
+
+    <div class="offer">
+       <div class="small-container">
+          <div class="row">
+              <div class="col-2">
+                  <img src="My_images/multichems.jpg" class="offer-img" style="max-width:300px; max-height:550px;" />
+              </div>
+              <div class="col-2">
+                  <p>Exclusively Available On Evoke-store</p>
+                  <h1>Smart Choice 6</h1>
+                  <small>The Mi Smart Band feature a 39.9% larger
+                  (than Mi Band 3) AMOLED color full touch display with adjustable 
+                  brightness, so everything is clear as it can be.</small>
+                  <a href="" class="btn">Buy Now &#8594</a>
+              </div>
+          </div>
+       </div>
+    </div>
+
+    <!---------------Testimonials-------------->
+    <div class="testimonials">
+        <div class="small-container">
+            <div class="row" style="flex-direction:row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        Lorem Ipsum is simply dummy text of<br> the printing
+                        and typesetting industry.<br> Lorem Ipsum has been the
+                        industry's<br> standard dummy text ever
+                    </p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star-sharp"></i>
+                        <i class="fa-solid fa-star-sharp"></i>
+                        <i class="fa-solid fa-star-sharp"></i>
+                        <i class="fa-solid fa-star-sharp"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="My_images/peaunoire1.jpg" />
+                    <h3>Lynda Keba</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        Lorem Ipsum is simply dummy text of<br> the printing
+                        and typesetting industry.<br> Lorem Ipsum has been the
+                        industry's<br> standard dummy text ever
+
+                    </p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star-sharp"></i>
+                        <i class="fa-solid fa-star-sharp"></i>
+                        <i class="fa-solid fa-star-sharp"></i>
+                        <i class="fa-solid fa-star-sharp"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="My_images/t-shirt-s1.jpg" />
+                    <h3>Hella Jones</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        Lorem Ipsum is simply dummy text of<br> the printing
+                        and typesetting industry.<br> Lorem Ipsum has been the
+                        industry's<br> standard dummy text ever
+
+                    </p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star-sharp"></i>
+                        <i class="fa-solid fa-star-sharp"></i>
+                        <i class="fa-solid fa-star-sharp"></i>
+                        <i class="fa-solid fa-star-sharp"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="My_images/peaunoire2.jpg" />
+                    <h3>Dana Wiles</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!----------Brands--------->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="My_images/brand1.png" />
+                </div>
+                <div class="col-5">
+                    <img src="My_images/brand4.png" />
+                </div>
+                <div class="col-5">
+                    <img src="My_images/brand5.png" />
+                </div>
+                <div class="col-5">
+                    <img src="My_images/brand2.png" />
+                </div>
+                <div class="col-5">
+                    <img src="My_images/images.png" />
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-------------Footer------------>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="" />
+                        <img src="" />
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="My_images/prelogo1.jpg" alt="website logo" width="110" height="55" border-radius="3px" />
+                    <p>Our Purpose is to sustainably make the pleasure and Benefits
+                    of sport accessible to the many</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <p class="copyright">Copyright 2021 EZPM</p>
+        </div>
+    </div>
+    <!--------Javascript for responsiveness------>
+    <script>
+        var menuItems = document.getElementById("menu-items");
+        menuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+          if (menuItems.style.maxHeight == "0px")
+              {
+                menuItems.style.maxHeight = "200px";
+
+              }
+         else
+              {
+            
+           
+                menuItems.style.maxHeight = "0px";
+              }
+        }
+    </script>
+     <!------Script for Categories ----->
+     <script src="Appli.js"></script>
+
+
+</body>
+</html> 
